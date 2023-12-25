@@ -118,7 +118,7 @@ install() {
   os::extract $tmp_file
 
   # install
-  export SONAR_SCANNER_HOME=/usr/local/bin/sonar-scanner
+  export SONAR_SCANNER_HOME=/usr/local/lib/sonar-scanner
   log::info "[$(timestamp)][package][$name] installing ..."
   # os::install $source_bin_file $usr_bin_dir $name
   sudo rm -rf $SONAR_SCANNER_HOME
